@@ -1,4 +1,4 @@
-###### Front-End Develop SCHOOL
+##### Front-End Develop SCHOOL
 
 # DAY 29
 
@@ -12,13 +12,12 @@
 #### 1.1. AJAX란?
 
 AJAX
-:Asynchronous  
+: Asynchronous  
 Javascript  
 And  
 XML  
 
-새로운 기술이 아닌, 기술 연계를 묶어 사용하는 기술로
-Jesse James Garrett에 의해 대중화 되었다.
+새로운 기술이 아닌, 기술 연계를 묶어 사용하는 기술로 Jesse James Garrett에 의해 대중화 되었다.
 
 특징
 * 페이지를 새로고침 하지 않고 도 필요한 데이타만 받아와서 내용을 업데이트
@@ -42,7 +41,7 @@ classic web application model(synchronous)
 * system processing할때 client 아무것도 하지 못하고 기다려야 한다.
 * 매번 전체 데이터를 다 받아와서 느리다.
 
---
+-----
 
 
 ### 1.2. XHR
