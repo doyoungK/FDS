@@ -1,0 +1,205 @@
+@charset "UTF-8";
+@import url("font/font-form.css");
+body{
+  font-family: VarelaRound-Regular;
+}
+.content{
+  position: relative;
+}
+.info-menu, .headline-subject, .headline-des-text, .main-content-text, .quote,
+.footer, .photo-ocean-cap, .carousel-btn, .main-content-3{
+  position: relative;
+  left: 20vw;
+  width: 600px;
+  margin: 30px 0;
+}
+.headline{}
+.headline-info:after, .headline-info::after{
+  content: 'by Bahodir Komilov';
+  position: absolute;
+  top: 0;
+  right: 300px;
+  font-family: Oswald-Bold;
+  color: #b8b8b8;
+}
+.info-menu{
+  list-style: none;
+  margin-left: 0;
+  margin-top: 75px;
+  padding: 0;
+  display: flex;
+  color: #1f4ba5;
+}
+.board-date{
+  padding-left: 30px;
+  font-family: PT_Serif-Web-Italic;
+  color: #b8b8b8;
+}
+.headline-subject{
+  font-size: 48px;
+}
+.headline-des-text:before, .headline-des-text::before{
+  content: url(images/bookmark.png);
+  position: absolute;
+  left: -45px;
+}
+.headline-des-text{
+  font-family: PT_Serif-Web-Italic;
+  font-size: 24px;
+  color: #b8b8b8;
+}
+.main-content{}
+
+.photo-ocean{
+  position: relative;
+  left: 10vw;
+}
+.photo-ocean-cap{
+  margin-top: 0;
+  font-family: PT_Serif-Web-Italic;
+  font-size: 14px;
+  color: #b8b8b8;
+}
+.main-content-text{
+  font-size: 16px;
+  color: #868686;
+  line-height: 1.8em;
+}
+.carousel-photos{
+  display: flex;
+}
+.carousel-photos figcaption{
+  text-align: center;
+  font-family: PT_Serif-Web-Italic;
+  font-size: 14px;
+  color: #b8b8b8;
+}
+.carousel-btn{
+  display: flex;
+}
+.btn-carousel-wrap{}
+.btn-carousel-wrap button{
+  margin: 0;
+  width: 60px;
+  height: 60px;
+}
+button.btn-photo-prev{
+  background: #fff url('images/icon-prev.png') no-repeat 21px 20px;
+  border: #abaaaa solid 1px;
+}
+button.btn-photo-next{
+  background: #fff url('images/icon-next.png') no-repeat 24px 20px;
+  border: #abaaaa solid 1px;
+}
+.pagination{
+  position: absolute;
+  bottom: 30%;
+  left: 160px;
+  color: #868686;
+}
+.pagination span{
+  font-size: 8px;
+}
+.fashion-week, .love-story, .russel-crowe, .david-duchovny{
+  margin: 0;
+}
+.fashion-week{
+  margin-left: 10vw;
+}
+.quote-subject{
+  font-size: 32px;
+}
+.quote-subject-text{
+  font-size: 16px;
+  color: #868686;
+  line-height: 1.8em;
+}
+q{
+  display: inline-block;
+  width: 360px;
+  position: relative;
+  font-family: PT_Serif-Web-Italic;
+  font-size: 18px;
+  line-height: 1.8em;
+}
+q:before, q::before{
+  content: url(images/icon-quts.png);
+  position: absolute;
+  left: -45px;
+}
+.quote-info{
+  float: right;
+  padding-right: 80px;
+}
+.quote-info figcaption{
+  font-size: 14px;
+}
+.quote-info figcaption:last-child{
+  font-size: 13px;
+  color: #b8b8b8;
+}
+.wolf{
+  position: relative;
+  top: 0;
+  left: -40px;
+}
+.video-duration{
+  position: absolute;
+  top: 15px;
+  right: -60px;
+  color: #808080;
+}
+.icon-play-button{
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+.wolf-video figcaption{
+  text-align: center;
+  font-family: PT_Serif-Web-Italic;
+  font-size: 13px;
+  color: #b8b8b8;
+}
+.wolf-video-text{
+  display: flex;
+}
+.wolf-video-text h3{
+  font-size: 18px;
+}
+.wolf-video-text p{
+  font-size: 16px;
+  color: #868686;
+  line-height: 1.8em;
+}
+.column-1{
+  width: 265px;
+  display: inline-block;
+  padding-right: 35px;
+}
+.column-2{
+  width: 265px;
+  display: inline-block;
+  padding-left: 35px;
+}
+.footer{
+  margin-bottom: 75px;
+}
+.sns a{
+  padding-right: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+  position: relative;
+}
+.sns span{
+  position: absolute;;
+  top: -11px;
+  right: 25px;
+}
+.back{
+  padding-top: 30px;
+}
+.back a{
+  text-decoration: none;
+  font-size: 12px;
+}

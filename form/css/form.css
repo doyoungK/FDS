@@ -1,0 +1,68 @@
+@charset "UTF-8";
+@import url("font/font-form.css");
+body{
+  font-family: 'VarelaRound-Regular';
+}
+.login{
+  position: relative;
+  width: 360px;
+  margin: 0 auto;
+  padding: 40px 0 20px 0;
+}
+.login-subject{
+  text-align: center;
+  width: 350px;
+  margin: 0 auto;
+}
+fieldset{
+  text-align: center;
+  border: none;
+  margin-top: 25px;
+}
+legend{
+  position: absolute;
+  left: -9999em;
+}
+.icon-close{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+#user-id, #user-pw{
+  border-radius: 50px;
+  border: none;
+  background: #f6f6f6;
+  margin-bottom: 12px;
+  padding: 0 18px;
+  height: 30px;
+  font-family: 'PT_Serif-Web-Italic';
+}
+.btn-login{
+  background: #1f4ba5;
+  border-radius: 50px;
+  width: 110px;
+  height: 30px;
+  border-color: #1f4ba5;
+  color: #fff;
+}
+.login-alt{
+  text-align: center;
+}
+.login-alt p{
+  display: block;
+  font-family: 'PT_Serif-Web-Italic';
+}
+.icon-facebook, .icon-twitter{
+  margin: 20px 6px;
+}
+.member{
+  padding-top: 40px;
+}
+.member a{
+  text-decoration: none;
+}
+.signup, .find{
+  text-align: center;
+  margin: 10px;
+  padding-top: 40px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+  <div class="login">
+    <h2 class="login-subject">Log in</h2>
+    <img class="icon-close" src="images/icon-close.png" alt="close button">
+    <form action="/">
+      <fieldset>
+        <legend>회원 로그인 폼</legend>
+
+        <div class="user-id">
+          <label for="user-id"></label>
+          <input type="text" id="user-id" required placeholder="login">
+        </div>
+        <div class="user-pw">
+          <label for="user-pw"></label>
+          <input type="password" id="user-pw" required placeholder="password">
+        </div>
+        <button class="btn-login" type="submit">Log in</button>
+        <div class="login-alt">
+          <p>or contact with</p>
+          <a class=icon-facebook href="https://www.facebook.com/login">
+          <img src="images/icon-facebook.png" alt="페이스북으로 로그인"></a>
+          <a class=icon-twi href="https://twitter.com/login">
+          <img src="images/icon-twitter.png" alt="트위터로 로그인"></a>
+        </div>
+        <div class="member">
+          <a class="signup" href="/">sign up</a>
+          <a class="find" href="/">forgot password?</a>
+        </div>
+      </fieldset>
+    </form>
+
+  </div>
+</body>
+</html>

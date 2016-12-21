@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pretending</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a href="#main-contents" class="a11y">go to main content</a>
+
+  <header class="header-wrapper">
+    <div class="header">
+      <a href="home.html"><h1 class="logo">PRETEND</h1></a>
+
+      <button  class="login-pop-btn loginPopBtn" data-rel="popup">
+        <img src="./icons/login.svg" alt="login icon" title="login" class="login-icon">
+      </button>
+
+      <div id="logincontainer" class="logincontainer">
+        <div  class="login-popup">
+          <div class="loginphoto"></div>
+          <div class="login-password">
+            <form action="" class="login">
+              <legend class="readable-hidden">User Login</legend>
+              <div class="login-box">
+                <label for="login_id">Email</label>
+                <input type="email" id="login_id" required>
+              </div>
+              <div class="password-box">
+                <label for="login_pass">Password</label>
+                <input type="password" id="login_pass" required>
+              </div>
+              <!-- <a href="join.html">Forgot passoward?</a> -->
+              <button class="login-button">Login</button>
+            </form>
+            <p>Still not a member? <button class="joinPopBtn">Join us!</button></p>
+
+          </div>
+          <button class="login-close"><img src="./icons/delete-button.svg" alt="Close button"></button>
+        </div>
+      </div>
+
+      <div id="joincontainer" class="joincontainer">
+        <div  class="join-popup">
+          <div class="joinphoto"></div>
+          <div class="join-password">
+            <form action="" class="join">
+              <legend class="readable-hidden">Join us!</legend>
+              <fieldset class="join-essential">
+                <div class="join-box">
+                  <label for="join_id">Email</label>
+                  <input type="email" id="join_id" required>
+                </div>
+                <div class="password-box">
+                  <label for="join_pass">Password</label>
+                  <input type="password" id="join_pass" required>
+                </div>
+                <div class="password-confirm">
+                  <label for="join_pass_con">Password Confirm</label>
+                  <input type="password" id="join_pass_con" required>
+                </div>
+              </fieldset>
+              <fieldset class="join-optional">
+                <legend class="readable-hidden">Optional Input</legend>
+                <div class="input-group">
+                  <div class="input-gender">
+                    <div class="male">
+
+                    </div>
+                    <div class="female">
+
+                    </div>
+                  </div>
+                  <div class="input-year">
+                    <div class="birth-year">
+
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+              <button class="join-button">Join</button>
+            </form>
+            <p>Already a member? <button class="loginPopBtn">Login</button></p>
+          </div>
+          <button class="join-close"><img src="./icons/delete-button.svg" alt="Close button"></button>
+        </div>
+      </div>
+
+      <button id="navMenu" class="menu-button">
+        <img src="./icons/interface.svg" alt="Menu icon" title="menu" class="menu-icon">
+      </button>
+    </div>
+
+    <nav class="navigation">
+      <h2 class="readable-hidden">menu</h2>
+      <ul>
+        <h3 class="readable-hidden">User's information</h3>
+        <li><img src="./icons/user.svg" alt="avatar" class= "login-hidden avatar-icon"></li>
+        <li><p class= "login-hidden userId">user's id: <span>pretending@sample.com</span></p></li>
+      </ul>
+      <ul>
+        <li><a href="view.html">My Stories</a></li>
+        <li><a href="view.html">Favorites</a></li>
+        <li><a href="view.html">Near by Stories</a></li>
+        <li><form class="search" action="search">
+          <img src="./icons/tool.svg" alt="searchicon" class="search-icon">
+          <input type="search">
+          <button class="search-button"><a href="./search.html">search</a></button>
+        </form></li>
+      </ul>
+
+      <button class="login-hidden">Setting</button>
+      <button class="login-hidden loginPopBtn">Login</button>
+      <button class="loggedin-hidden joinPopBtn">Join</button>
+
+
+      <button class="close-nav"><img src="./icons/delete-button.svg" alt="Close button" class="close-icon"></button>
+    </nav>
+
+  </header>
+
+
+
+
+  <main id="main-content" class="main-content">
+
+    <div class="search-page">
+      <p>Search Not Found!</p>
+    </div>
+  </main>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+    crossorigin="anonymous"></script>
+  <script src="core.js" charset="utf-8"></script>
+  <script src="jquery.easing.min.js" charset="utf-8"></script>
+  <script src="jquery.vgrid.min.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      console.log($(".container"));
+      var vg = $(".container").vgrid({
+        easing: "easeOutQuint",
+        useLoadImageEvent: true,
+        time: 1000,
+        delay: 20,
+        fadeIn: {
+          time: 1000,
+          delay: 100,
+          wait: 1000
+        }
+      });
+
+      $(window).load(function(e){
+    		vg.vgrefresh();
+    	});
+    });
+
+    $('.menu-button').on('click', function(){
+      console.log('on');
+      $(".navigation").addClass("navigation-active");
+    });
+    $('.close-nav').on('click', function(){
+      console.log('off');
+      $(".navigation").removeClass("navigation-active");
+    });
+
+
+  </script>
+</body>
+</html>

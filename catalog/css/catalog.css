@@ -1,0 +1,78 @@
+@charset "UTF-8";
+body{
+  background: #dfdfdf;
+  max-width: 1440px;
+  min-width: 820px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.catalog{
+  background: #fff;
+  margin: 0 auto;
+  width: 720px;
+  margin-top: 15px;
+}
+.catalog-table{
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+
+}
+tr{
+  border-bottom: 1px solid #dfdfdf;
+}
+tr, td{
+  width: 120px;
+  height: 120px;
+}
+td span{
+  display: inline-block;
+}
+td a{
+  text-decoration: none;
+  display: block;
+  margin-top: 15px;
+  padding-left: 10px;
+}
+/*td a:before, td a::before{
+  content: url('../images/icon-heart-plus.png') ;
+  display: block;
+  margin-top: 15px;
+  padding-left: 10px;
+}
+td a:active, td a::active{
+  content: ' Added';
+  display: block;
+  margin-top: 15px;
+  padding-left: 10px;
+}*/
+.price img{
+  padding-top: 15px;
+}
+span.sale-price{
+  font-size: 5px;
+  font-family: Oswald-Bold;
+  color: #a1a1a1;
+  display: inline-block;
+  padding-left: 10px;
+  text-decoration: line-through;
+}
+.select-size{
+  border-style: none;
+  background-color: #f6f6f6;
+  width: 90px;
+  height: 30px;
+  padding-left: 20px;
+  border-radius: 50px;
+  font-family: PT_Serif-Web-Italic;
+  color: #868686;
+}
+button{
+  background: #1f4ba5;
+  border-style: none;
+  width: 110px;
+  height: 30px;
+  border-radius: 50px;
+  font-family: VarelaRound-Regular;
+  color: #fff;
+}

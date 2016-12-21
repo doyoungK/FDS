@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'PT_Serif-Web-Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: url(PT_Serif-Web-Italic.ttf);
+}
+@font-face {
+    font-family: 'VarelaRound-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url(VarelaRound-Regular.ttf);
+}
+@font-face {
+    font-family: 'Oswald-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url(Oswald-Bold.ttf);
+}

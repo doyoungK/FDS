@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'orange_juice_2.0';
+    font-style: normal;
+    font-weight: normal;
+    src: url(orange_juice_2.0.ttf);
+}
+@font-face {
+    font-family: 'Typo_Round_Regular_Demo';
+    font-style: normal;
+    font-weight: normal;
+    src: url(Typo_Round_Regular_Demo.otf);
+}
+@font-face {
+    font-family: 'Typo_Round_Italic_Demo';
+    font-style: normal;
+    font-weight: normal;
+    src: url(Typo_Round_Italic_Demo.otf);
+}
+@font-face {
+    font-family: 'Typo_Round_Light_Demo';
+    font-style: normal;
+    font-weight: normal;
+    src: url(Typo_Round_Light_Demo.otf);
+}
+@font-face {
+    font-family: 'Typo_Round_Light_Italic_Demo';
+    font-style: normal;
+    font-weight: normal;
+    src: url(Typo_Round_Light_Italic_Demo.otf);
+}

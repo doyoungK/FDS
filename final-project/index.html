@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pretending</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a href="#main-contents" class="a11y">go to main content</a>
+
+  <header class="header-wrapper">
+    <div class="header">
+      <a href="index.html"><h1 class="logo">PRETEND</h1></a>
+
+      <button  class="login-pop-btn loginPopBtn" data-rel="popup">
+        <img src="./icons/login.svg" alt="login icon" title="login" class="login-icon">
+      </button>
+
+      <div id="logincontainer" class="logincontainer">
+        <div  class="login-popup">
+          <div class="loginphoto"></div>
+          <div class="login-password">
+            <form action="" class="login">
+              <legend class="readable-hidden">User Login</legend>
+              <div class="login-box">
+                <label for="login_id">Email</label>
+                <input type="email" id="login_id" required>
+              </div>
+              <div class="password-box">
+                <label for="login_pass">Password</label>
+                <input type="password" id="login_pass" required>
+              </div>
+              <!-- <a href="join.html">Forgot passoward?</a> -->
+              <button class="login-button">Login</button>
+            </form>
+            <p>Still not a member? <button class="joinPopBtn">Join us!</button></p>
+
+          </div>
+          <button class="login-close"><img src="./icons/delete-button.svg" alt="Close button"></button>
+        </div>
+      </div>
+
+      <div id="joincontainer" class="joincontainer">
+        <div  class="join-popup">
+          <div class="joinphoto"></div>
+          <div class="join-password">
+            <form action="" class="join">
+              <legend class="readable-hidden">Join us!</legend>
+              <fieldset class="join-essential">
+                <div class="join-box">
+                  <label for="join_id">Email</label>
+                  <input type="email" id="join_id" required>
+                </div>
+                <div class="password-box">
+                  <label for="join_pass">Password</label>
+                  <input type="password" id="join_pass" required>
+                </div>
+                <div class="password-confirm">
+                  <label for="join_pass_con">Password Confirm</label>
+                  <input type="password" id="join_pass_con" required>
+                </div>
+              </fieldset>
+              <fieldset class="join-optional">
+                <legend class="readable-hidden">Optional Input</legend>
+                <div class="input-group">
+                  <p><span>Optional</span></p>
+                  <div class="input-gender">
+                    <div class="male">
+                      <input type="radio" name="gender" value="male" id="male">
+                      <label for="male">Male</label>
+                    </div>
+                    <div class="female">
+                      <input type="radio" name="gender" value="female" id="female">
+                      <label for="female">Female</label>
+                    </div>
+                  </div>
+                  <div class="input-year">
+                    <div class="birth-year">
+                      <select name="year" id="year" onchange="call()">
+                        <option value="">Birth Year</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+              <button class="join-button">Join</button>
+            </form>
+            <p>Already a member? <button class="joinLoginBtn">Login</button></p>
+          </div>
+          <button class="join-close"><img src="./icons/delete-button.svg" alt="Close button"></button>
+        </div>
+      </div>
+
+      <button id="navMenu" class="menu-button">
+        <img src="./icons/interface.svg" alt="Menu icon" title="menu" class="menu-icon">
+      </button>
+    </div>
+
+    <nav class="navigation">
+      <h2 class="readable-hidden">menu</h2>
+      <ul>
+        <h3 class="readable-hidden">User's information</h3>
+        <li><img src="./icons/user.svg" alt="avatar" class= "login-hidden avatar-icon"></li>
+        <li><p class= "login-hidden userId">user's id: <span>pretending@sample.com</span></p></li>
+      </ul>
+      <ul>
+        <li><a href="#">My Stories</a></li>
+        <li><a href="#">Favorites</a></li>
+        <li><a href="#">Near by Stories</a></li>
+        <li><form class="search" action="search">
+          <img src="./icons/tool.svg" alt="searchicon" class="search-icon">
+          <input type="search">
+          <button class="search-button"><a href="./search.html">search</a></button>
+        </form></li>
+      </ul>
+
+      <button class="login-hidden">Setting</button>
+      <button class="login-hidden menuLoginBtn">Login</button>
+      <button class="loggedin-hidden menuJoinBtn">Join</button>
+
+      <button class="close-nav"><img src="./icons/delete-button.svg" alt="Close button" class="close-icon"></button>
+    </nav>
+
+  </header>
+
+  <main id="main-content" class="main-content">
+
+    <div id="photo_add_content" class="main-content">
+
+      <div id="container" class="container">
+        <article class="card-tile">
+          <div class="list-box">
+            <li><a href="">
+              <time class="card-date" datetime="2016.12.24">2016.12.24</time>
+              <p class="card-short-content login-hidden">Lorem ipsu aliquid laboriosam accusantium, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quos repellat quisquam esse debitis repudiandae iste nisi sapiente minima architecto!Lorem ipsum dolor sit amet, consectetur adipisicing elit. In deserunt nihil dolore reprehenderit quibusdam ratione enim ipsa placeat doloremque eaque. ad neque ut eos porro repellat quia minus rem eligendi explicabo. Neque veritatis impedit excepturi adipisci aspernatur omnis enim minus praesentium.</p>
+              <p class="card-hashtag">#Christmas Eve #Wating for Santa #Milk n Cookies</p>
+              <section class="card-icons">
+                <div><img src="./icons/placeholder-white.png" alt="card-location" class="card-location"><span>5km</span></div>
+                <div><img src="./icons/heart-white.png" alt="card-likes" class="card-likes"><span>12</span></div>
+                <div><img src="./icons/chat-white.png" alt="card-replies" class="card-replies"><span>1</span></div>
+              </section>
+              </a>
+            </li>
+          </div>
+        </article>
+
+        <article class="card-tile sam2">
+          <div class="list-box">
+            <li><a href="">
+              <time class="card-date" datetime="2016.12.31">2016.12.31</time>
+              <p class="card-short-content login-hidden">Lorem ipsum dolor sit amet, c enim deleniti nemo porro s Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, suscipit!ed ipsum optio recusandae corporis, accusantium, facilis eaque quaerat illum cupiditate earum? Eius, veniam voluptas perspiciatis nisi, optio, voluptatum atque saepe officia ipsa impedit vitae quidem. Quis quidem sapiente cum tenetur accusamus labore rerum enim, sint facere sunt, possimus molestias quasi veritatis, a pariatur aliquid suscipit? Voluptates sit iste aspernatur modi molestias eaque porro ducimus eius temporibus deserunt vero praesentium, voluptatibus error est velit voluptate nihil illo vitae repudiandae.</p>
+              <p class="card-hashtag">#Happy Anniversary to YOU #Winter Wedding</p>
+                <section class="card-icons">
+                  <div><img src="./icons/placeholder-white.png" alt="card-location" class="card-location"><span>5km</span></div>
+                  <div><img src="./icons/heart-white.png" alt="card-likes" class="card-likes"><span>12</span></div>
+                  <div><img src="./icons/chat-white.png" alt="card-replies" class="card-replies"><span>1</span></div>
+                </section>
+              </a>
+            </li>
+          </div>
+        </article>
+
+        <article class="card-tile sam3">
+          <div class="list-box">
+            <li><a href="">
+              <time class="card-date" datetime="2016.12.02">2016.12.02</time>
+              <p class="card-short-content login-hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur hic quo commodi omnis repudiandae aperiam fugiat, delectus accusantium, ut illum, veritatis excepturi aspernatur! Illo tempora nulla iure expedita magnam omnis nam eveniet assumenda, officiis aliquid laboriosam accusantium, ad neque ut eos porro repellat quia minus rem eligendi explicabo. Neque veritatis impedit excepturi adipisci aspernatur omnis enim minus praesentium.</p>
+              <p class="card-hashtag">#December #Last Month</p>
+              <section class="card-icons">
+                <div><img src="./icons/placeholder-white.png" alt="card-location" class="card-location"><span>5km</span></div>
+                <div><img src="./icons/heart-white.png" alt="card-likes" class="card-likes"><span>12</span></div>
+                <div><img src="./icons/chat-white.png" alt="card-replies" class="card-replies"><span>1</span></div>
+              </section>
+              </a>
+            </li>
+          </div>
+        </article>
+
+        <article class="card-tile sam4">
+          <div class="list-box">
+            <li><a href="">
+              <time class="card-date" datetime="2016.11.31">2016.11.31</time>
+              <p class="card-short-content login-hidden">Lorem ipsum nde nulla, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum et itaque non eum culpa reiciendis excepturi, magnam id praesentium ex! commodi omnis repudiandae aperiam fugiat, delectus accusantium, ut illum, veritatis excepturi aspernatur! Illo tempora nulla iure expedita magnam omnis nam eveniet assumenda, officiis aliquid laboriosam accusantium, ad neque ut eos porro repellat quia minus rem eligendi explicabo. Neque veritatis impedit excepturi adipisci aspernatur omnis enim minus praesentium.</p>
+              <p class="card-hashtag">#Light Decoration #Indoor</p>
+              <section class="card-icons">
+                <div><img src="./icons/placeholder-white.png" alt="card-location" class="card-location"><span>5km</span></div>
+                <div><img src="./icons/heart-white.png" alt="card-likes" class="card-likes"><span>12</span></div>
+                <div><img src="./icons/chat-white.png" alt="card-replies" class="card-replies"><span>1</span></div>
+              </section>
+              </a>
+            </li>
+          </div>
+        </article>
+
+        <article class="card-tile sam5">
+          <div class="list-box">
+            <li><a href="">
+              <time class="card-date" datetime="2016.12.01">2016.12.01</time>
+              <p class="card-short-content login-hidden">Lorem ipsum nde nulla, commodi omnis repudiandae aperiam Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, sit. fugiat, delectus accusantium, ut illum, veritatis excepturi aspernatur! Illo tempora nulla iure expedita magnam omnis nam eveniet assumenda, officiis aliquid laboriosam accusantium, ad neque ut eos porro repellat quia minus rem eligendi explicabo. Neque veritatis impedit excepturi adipisci aspernatur omnis enim minus praesentium.</p>
+              <p class="card-hashtag">#Light Decoration #Indoor Decoration</p>
+              <section class="card-icons">
+                <div><img src="./icons/placeholder-white.png" alt="card-location" class="card-location"><span>5km</span></div>
+                <div><img src="./icons/heart-white.png" alt="card-likes" class="card-likes"><span>12</span></div>
+                <div><img src="./icons/chat-white.png" alt="card-replies" class="card-replies"><span>1</span></div>
+              </section>
+              </a>
+            </li>
+          </div>
+        </article>
+
+        <article class="card-tile sam6">
+          <div class="list-box">
+            <li><a href="">
+              <time class="card-date" datetime="2016.12.25">2016.12.25</time>
+              <p class="card-short-content login-hidden">Lorem ipsum nde nulla, Lorem ipsum dolor sit ctus accusantium, ut illum, veritatis excepturi aspernatur! Illo tempora nulla iure expedita magnam omnis nam eveniet assumenda, officiis aliquid laboriosam accusantium, ad neque ut eos porro repellat quia minus rem eligendi explicabo. Neque veritatis impedit excepturi adipisci aspernatur omnis enim minus praesentium.</p>
+              <p class="card-hashtag">#Snowing Street #Snow #Winter Street</p>
+              <section class="card-icons">
+                <div><img src="./icons/placeholder-white.png" alt="card-location" class="card-location"><span>5km</span></div>
+                <div><img src="./icons/heart-white.png" alt="card-likes" class="card-likes"><span>12</span></div>
+                <div><img src="./icons/chat-white.png" alt="card-replies" class="card-replies"><span>1</span></div>
+              </section>
+              </a>
+            </li>
+          </div>
+        </article>
+
+        <article class="card-tile sam7">
+          <div class="list-box">
+            <li><a href="">
+              <time class="card-date" datetime="2016.12.25">2016.12.25</time>
+              <p class="card-short-content login-hidden">Lorem ipsum Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, reiciendis.adipisicing elit. Excepturi, vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aut voluptatibus, quas repudiandae in necessitatibus cum, nesciunt blanditiis fuga error.dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, necessitatibus! consectetur adipisicing elit. Nulla, omnis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, deserunt!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam veniam similique, sequi ea omnis debitis alias libero. Doloribus, at, quasi.</p>
+              <p class="card-hashtag">#Christmas #Home-party #Happiness</p>
+              <section class="card-icons">
+                <div><img src="./icons/placeholder-white.png" alt="card-location" class="card-location"><span>5km</span></div>
+                <div><img src="./icons/heart-white.png" alt="card-likes" class="card-likes"><span>12</span></div>
+                <div><img src="./icons/chat-white.png" alt="card-replies" class="card-replies"><span>1</span></div>
+              </section>
+              </a>
+            </li>
+          </div>
+        </article>
+
+        <article class="card-tile sam8">
+          <div class="list-box">
+            <li><a href="">
+              <time class="card-date" datetime="2016.12.07">2016.12.07</time>
+              <p class="card-short-content login-hidden">Lorem ipsum Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, reiciendis.adipisicing elit. Excepturi, vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aut voluptatibus, quas repudiandae in necessitatibus cum, nesciunt blanditiis fuga error.dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, necessitatibus! consectetur adipisicing elit. Nulla, omnis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, deserunt!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam veniam similique, sequi ea omnis debitis alias libero. Doloribus, at, quasi.</p>
+              <p class="card-hashtag">#Christmas Tree Light Decorations</p>
+              <section class="card-icons">
+                <div><img src="./icons/placeholder-white.png" alt="card-location" class="card-location"><span>5km</span></div>
+                <div><img src="./icons/heart-white.png" alt="card-likes" class="card-likes"><span>12</span></div>
+                <div><img src="./icons/chat-white.png" alt="card-replies" class="card-replies"><span>1</span></div>
+              </section>
+              </a>
+            </li>
+          </div>
+        </article>
+
+        <article class="card-tile sam9">
+          <div class="list-box">
+            <li><a href="">
+              <time class="card-date" datetime="2016.12.10">2016.12.10</time>
+              <p class="card-short-content login-hidden">Lorem ipsum Lorem ipsum dolor sit amet, consec consectetur adipisicing elit. Accusamus aut voluptatibus, quas repudiandae in necessitatibus cum, nesciunt blanditiis fuga error.dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, necessitatibus! consectetur adipisicing elit. Nulla, omnis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, deserunt!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam veniam similique, sequi ea omnis debitis alias libero. Doloribus, at, quasi.</p>
+              <p class="card-hashtag">#Helping Decorations #Lights</p>
+              <section class="card-icons">
+                <div><img src="./icons/placeholder-white.png" alt="card-location" class="card-location"><span>5km</span></div>
+                <div><img src="./icons/heart-white.png" alt="card-likes" class="card-likes"><span>12</span></div>
+                <div><img src="./icons/chat-white.png" alt="card-replies" class="card-replies"><span>1</span></div>
+              </section>
+              </a>
+            </li>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </main>
+
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+    crossorigin="anonymous"></script>
+  <script src="core.js" charset="utf-8"></script>
+  <script src="jquery.easing.min.js" charset="utf-8"></script>
+  <script src="jquery.vgrid.min.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+          console.log($(".container"));
+          var vg = $(".container").vgrid({
+            easing: "easeOutQuint",
+            useLoadImageEvent: true,
+            time: 1000,
+            delay: 20,
+            fadeIn: {
+              time: 1000,
+              delay: 100,
+              wait: 1000
+            }
+          });
+
+          $(window).load(function(e){
+            vg.vgrefresh();
+          });
+        });
+
+        $('.menu-button').on('click', function(){
+          console.log('on');
+          $(".navigation").addClass("navigation-active");
+        });
+        $('.menu-button').on('focus', function(){
+          console.log('on');
+          $(".navigation").addClass("navigation-active");
+        });
+        $('.close-nav').on('click', function(){
+          console.log('off');
+          $(".navigation").removeClass("navigation-active");
+        });
+
+        // scroll
+
+      $(document).ready(function() {
+        var cnt = 0;
+        $(window).scroll(function() {
+          // var scrollH = $("body").scrollTop();
+          // var windowH = $(window).height();
+          // var documentH = $(document).height();
+
+          var scrollH = $(window).scrollTop() + $(window).height();
+          var documentH = $(document).height();
+
+          // if(scrollH >= documentH - windowH - 100) {
+          if(scrollH >= documentH - 200) {
+            console.log("test");
+              for(var i = 0; i < 1; i++) {
+              $('.container').append(
+                '<article class="card-tile">'
+               + '<div class="list-box">'
+               + '<li><a href="">'
+               + '<time class="card-date" datetime="2016.12.24">2016.12.24</time>'
+               + '<p class="card-short-content login-hidden">Lorem ipsu aliquid laboriosam accusantium, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quos repellat quisquam esse debitis repudiandae iste nisi sapiente minima architecto!Lorem ipsum dolor sit amet, consectetur adipisicing elit. In deserunt nihil dolore reprehenderit quibusdam ratione enim ipsa placeat doloremque eaque. ad neque ut eos porro repellat quia minus rem eligendi explicabo. Neque veritatis impedit excepturi adipisci aspernatur omnis enim minus praesentium.</p>'
+               + '<p class="card-hashtag">#Christmas Eve #Wating for Santa #Milk n Cookies</p>'
+               + '<section class="card-icons">'
+               + '<div><img src="./icons/placeholder-white.png" alt="card-location" class="card-location"><span>5km</span></div>'
+               + '<div><img src="./icons/heart-white.png" alt="card-likes" class="card-likes"><span>12</span></div>'
+               + '<div><img src="./icons/chat-white.png" alt="card-replies" class="card-replies"><span>1</span></div>'
+               + '</section>'
+               + '</a>'
+               + '</li>'
+               + '</div>'
+               + '</article>'
+
+               + '<article class="card-tile sam2">'
+               + '<div class="list-box">'
+               + '<li><a href="">'
+               + '<time class="card-date" datetime="2016.12.31">2016.12.31</time>'
+               + '<p class="card-short-content login-hidden">Lorem ipsum dolor sit amet, c enim deleniti nemo porro s Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, suscipit!ed ipsum optio recusandae corporis, accusantium, facilis eaque quaerat illum cupiditate earum? Eius, veniam voluptas perspiciatis nisi, optio, voluptatum atque saepe officia ipsa impedit vitae quidem. Quis quidem sapiente cum tenetur accusamus labore rerum enim, sint facere sunt, possimus molestias quasi veritatis, a pariatur aliquid suscipit? Voluptates sit iste aspernatur modi molestias eaque porro ducimus eius temporibus deserunt vero praesentium, voluptatibus error est velit voluptate nihil illo vitae repudiandae.</p>'
+               + '<p class="card-hashtag">#Happy Anniversary to YOU #Winter Wedding</p>'
+               + '<section class="card-icons">'
+               + '<div><img src="./icons/placeholder-white.png" alt="card-location" class="card-location"><span>5km</span></div>'
+               + '<div><img src="./icons/heart-white.png" alt="card-likes" class="card-likes"><span>12</span></div>'
+               + '<div><img src="./icons/chat-white.png" alt="card-replies" class="card-replies"><span>1</span></div>'
+               + '</section>'
+               + '</a>'
+               + '</li>'
+               + '</div>'
+               + '</article>'
+
+               + '<article class="card-tile sam3">'
+               + '<div class="list-box">'
+               + '<li><a href="">'
+               + '<time class="card-date" datetime="2016.12.02">2016.12.02</time>'
+               + '<p class="card-short-content login-hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur hic quo commodi omnis repudiandae aperiam fugiat, delectus accusantium, ut illum, veritatis excepturi aspernatur! Illo tempora nulla iure expedita magnam omnis nam eveniet assumenda, officiis aliquid laboriosam accusantium, ad neque ut eos porro repellat quia minus rem eligendi explicabo. Neque veritatis impedit excepturi adipisci aspernatur omnis enim minus praesentium.</p>'
+               + '<p class="card-hashtag">#December #Last Month</p>'
+               + '<section class="card-icons">'
+               + '<div><img src="./icons/placeholder-white.png" alt="card-location" class="card-location"><span>5km</span></div>'
+               + '<div><img src="./icons/heart-white.png" alt="card-likes" class="card-likes"><span>12</span></div>'
+               + '<div><img src="./icons/chat-white.png" alt="card-replies" class="card-replies"><span>1</span></div>'
+               + '</section>'
+               + '</a>'
+               + '</li>'
+               + '</div>'
+               + '</article>'
+
+               + '<article class="card-tile sam4">'
+               + '<div class="list-box">'
+               + '<li><a href="">'
+               + '<time class="card-date" datetime="2016.11.31">2016.11.31</time>'
+               + '<p class="card-short-content login-hidden">Lorem ipsum nde nulla, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum et itaque non eum culpa reiciendis excepturi, magnam id praesentium ex! commodi omnis repudiandae aperiam fugiat, delectus accusantium, ut illum, veritatis excepturi aspernatur! Illo tempora nulla iure expedita magnam omnis nam eveniet assumenda, officiis aliquid laboriosam accusantium, ad neque ut eos porro repellat quia minus rem eligendi explicabo. Neque veritatis impedit excepturi adipisci aspernatur omnis enim minus praesentium.</p>'
+               + '<p class="card-hashtag">#Light Decoration #Indoor</p>'
+               + '<section class="card-icons">'
+               + '<div><img src="./icons/placeholder-white.png" alt="card-location" class="card-location"><span>5km</span></div>'
+               + '<div><img src="./icons/heart-white.png" alt="card-likes" class="card-likes"><span>12</span></div>'
+               + '<div><img src="./icons/chat-white.png" alt="card-replies" class="card-replies"><span>1</span></div>'
+               + '</section>'
+               + '</a>'
+               + '</li>'
+               + '</div>'
+               + '</article>'
+
+               + '<article class="card-tile sam5">'
+               + '<div class="list-box">'
+               + '<li><a href="">'
+               + '<time class="card-date" datetime="2016.12.01">2016.12.01</time>'
+               + '<p class="card-short-content login-hidden">Lorem ipsum nde nulla, commodi omnis repudiandae aperiam Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, sit. fugiat, delectus accusantium, ut illum, veritatis excepturi aspernatur! Illo tempora nulla iure expedita magnam omnis nam eveniet assumenda, officiis aliquid laboriosam accusantium, ad neque ut eos porro repellat quia minus rem eligendi explicabo. Neque veritatis impedit excepturi adipisci aspernatur omnis enim minus praesentium.</p>'
+               + '<p class="card-hashtag">#Light Decoration #Indoor Decoration</p>'
+               + '<section class="card-icons">'
+               + '<div><img src="./icons/placeholder-white.png" alt="card-location" class="card-location"><span>5km</span></div>'
+               + '<div><img src="./icons/heart-white.png" alt="card-likes" class="card-likes"><span>12</span></div>'
+               + '<div><img src="./icons/chat-white.png" alt="card-replies" class="card-replies"><span>1</span></div>'
+               + '</section>'
+               + '</a>'
+               + '</li>'
+               + '</div>'
+               + '</article>'
+
+               + '<article class="card-tile sam6">'
+               + '<div class="list-box">'
+               + '<li><a href="">'
+               + '<time class="card-date" datetime="2016.12.25">2016.12.25</time>'
+               + '<p class="card-short-content login-hidden">Lorem ipsum nde nulla, Lorem ipsum dolor sit ctus accusantium, ut illum, veritatis excepturi aspernatur! Illo tempora nulla iure expedita magnam omnis nam eveniet assumenda, officiis aliquid laboriosam accusantium, ad neque ut eos porro repellat quia minus rem eligendi explicabo. Neque veritatis impedit excepturi adipisci aspernatur omnis enim minus praesentium.</p>'
+               + '<p class="card-hashtag">#Snowing Street #Snow #Winter Street</p>'
+               + '<section class="card-icons">'
+               + '<div><img src="./icons/placeholder-white.png" alt="card-location" class="card-location"><span>5km</span></div>'
+               + '<div><img src="./icons/heart-white.png" alt="card-likes" class="card-likes"><span>12</span></div>'
+               + '<div><img src="./icons/chat-white.png" alt="card-replies" class="card-replies"><span>1</span></div>'
+               + '</section>'
+               + '</a>'
+               + '</li>'
+               + '</div>'
+               + '</article>'
+
+               + '<article class="card-tile sam7">'
+               + '<div class="list-box">'
+               + '<li><a href="">'
+               + '<time class="card-date" datetime="2016.12.25">2016.12.25</time>'
+               + '<p class="card-short-content login-hidden">Lorem ipsum Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, reiciendis.adipisicing elit. Excepturi, vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aut voluptatibus, quas repudiandae in necessitatibus cum, nesciunt blanditiis fuga error.dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, necessitatibus! consectetur adipisicing elit. Nulla, omnis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, deserunt!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam veniam similique, sequi ea omnis debitis alias libero. Doloribus, at, quasi.</p>'
+               + '<p class="card-hashtag">#Christmas #Home-party #Happiness</p>'
+               + '<section class="card-icons">'
+               + '<div><img src="./icons/placeholder-white.png" alt="card-location" class="card-location"><span>5km</span></div>'
+               + '<div><img src="./icons/heart-white.png" alt="card-likes" class="card-likes"><span>12</span></div>'
+               + '<div><img src="./icons/chat-white.png" alt="card-replies" class="card-replies"><span>1</span></div>'
+               + '</section>'
+               + '</a>'
+               + '</li>'
+               + '</div>'
+               + '</article>'
+
+               + '<article class="card-tile sam8">'
+               + '<div class="list-box">'
+               + '<li><a href="">'
+               + '<time class="card-date" datetime="2016.12.07">2016.12.07</time>'
+               + '<p class="card-short-content login-hidden">Lorem ipsum Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, reiciendis.adipisicing elit. Excepturi, vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aut voluptatibus, quas repudiandae in necessitatibus cum, nesciunt blanditiis fuga error.dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, necessitatibus! consectetur adipisicing elit. Nulla, omnis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, deserunt!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam veniam similique, sequi ea omnis debitis alias libero. Doloribus, at, quasi.</p>'
+               + '<p class="card-hashtag">#Christmas Tree Light Decorations</p>'
+               + '<section class="card-icons">'
+               + '<div><img src="./icons/placeholder-white.png" alt="card-location" class="card-location"><span>5km</span></div>'
+               + '<div><img src="./icons/heart-white.png" alt="card-likes" class="card-likes"><span>12</span></div>'
+               + '<div><img src="./icons/chat-white.png" alt="card-replies" class="card-replies"><span>1</span></div>'
+               + '</section>'
+               + '</a>'
+               + '</li>'
+               + '</div>'
+               + '</article>'
+
+               + '<article class="card-tile sam9">'
+               + '<div class="list-box">'
+               + '<li><a href="">'
+               + '<time class="card-date" datetime="2016.12.10">2016.12.10</time>'
+               + '<p class="card-short-content login-hidden">Lorem ipsum Lorem ipsum dolor sit amet, consec consectetur adipisicing elit. Accusamus aut voluptatibus, quas repudiandae in necessitatibus cum, nesciunt blanditiis fuga error.dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, necessitatibus! consectetur adipisicing elit. Nulla, omnis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, deserunt!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam veniam similique, sequi ea omnis debitis alias libero. Doloribus, at, quasi.</p>'
+               + '<p class="card-hashtag">#Helping Decorations #Lights</p>'
+               + '<section class="card-icons">' + '<div><img src="./icons/placeholder-white.png" alt="card-location" class="card-location"><span>5km</span></div>'
+               + '<div><img src="./icons/heart-white.png" alt="card-likes" class="card-likes"><span>12</span></div>'
+               + '<div><img src="./icons/chat-white.png" alt="card-replies" class="card-replies"><span>1</span></div>'
+               + '</section>'
+               + '</a>'
+               + '</li>'
+               + '</div>'
+               + '</article>'
+             );
+
+            }
+            var vg = $(".container").vgrid({
+              easing: "easeOutQuint",
+              useLoadImageEvent: true,
+              time: 1000,
+              fadeIn: {
+                time: 1000
+              }
+            });
+
+            $(window).load(function(e){
+              vg.vgrefresh();
+            });
+          }
+
+
+        });
+      });
+
+  </script>
+</body>
+</html>
